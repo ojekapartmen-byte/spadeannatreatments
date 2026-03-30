@@ -1,11 +1,11 @@
-import Navbar from "./home/_components/Navbar.tsx";
-import HeroSection from "./home/_components/HeroSection.tsx";
-import CategoryIcons from "./home/_components/CategoryIcons.tsx";
-import BestDealSection from "./home/_components/BestDealSection.tsx";
-import PremiumSection from "./home/_components/PremiumSection.tsx";
-import ServiceSection from "./home/_components/ServiceSection.tsx";
-import type { TreatmentCard } from "./home/_components/ServiceSection.tsx";
-import Footer from "./home/_components/Footer.tsx";
+import Navbar from "./home/_components/Navbar";
+import HeroSection from "./home/_components/HeroSection";
+import CategoryIcons from "./home/_components/CategoryIcons";
+import BestDealSection from "./home/_components/BestDealSection";
+import PremiumSection from "./home/_components/PremiumSection";
+import ServiceSection from "./home/_components/ServiceSection";
+import type { TreatmentCard } from "./home/_components/ServiceSection";
+import Footer from "./home/_components/Footer";
 
 // ── WhatsApp booking link helper ─────────────────────────────────────────────
 const WA_NUMBER = "6281999231518";
@@ -362,8 +362,8 @@ const hairLashCards: TreatmentCard[] = [
 export default function Index() {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <main className="pt-[73px]">
+      {/* Navbar dihapus agar tidak muncul header ganda di WordPress Elementor */}
+      <main className="pt-0">
         <HeroSection />
         <CategoryIcons />
         <BestDealSection />
