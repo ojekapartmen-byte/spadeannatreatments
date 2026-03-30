@@ -362,7 +362,7 @@ const hairLashCards: TreatmentCard[] = [
 export default function Index() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navbar dihapus agar tidak muncul header ganda di WordPress Elementor */}
+      {/* Navbar sudah dihapus */}
       <main className="pt-0">
         <HeroSection />
         <CategoryIcons />
@@ -385,7 +385,7 @@ export default function Index() {
           cards={hairLashCards}
         />
       </main>
-      <Footer />
+      {/* Footer dihapus agar bersih di Elementor */}
     </div>
   );
 }
